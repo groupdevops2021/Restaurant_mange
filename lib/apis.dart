@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as https;
 
-/* Generate output for available blood group */
 requestUser(String email) async {
   try {
     print("___connection established___");
@@ -19,7 +18,7 @@ requestUser(String email) async {
   }
 }
 
-/* Generate output for available blood group */
+/*function adding to user to db*/
 adduser(
   String _email,
   String _name,
@@ -44,7 +43,7 @@ adduser(
   }
 }
 
-/* Generate output for available blood group */
+/*function to view members*/
 viewUser() async {
   try {
     print("___connection established___12");
@@ -60,7 +59,7 @@ viewUser() async {
   }
 }
 
-/* Generate output for available blood group */
+/*function for manager to add salary*/
 addSalary(String name, String id, String salary, String month) async {
   try {
     print("___connection established___");
@@ -82,7 +81,7 @@ addSalary(String name, String id, String salary, String month) async {
   }
 }
 
-/* Generate output for available blood group */
+/*function to display salary to members*/
 showSalary(String id) async {
   try {
     print("___connection established___");
@@ -101,7 +100,7 @@ showSalary(String id) async {
   }
 }
 
-/* Generate output for available blood group */
+/*function to add roster by manager*/
 addrooster(List<String> addList) async {
   try {
     print("___connection established___");
@@ -128,7 +127,7 @@ addrooster(List<String> addList) async {
     print("Error in establishing connection 101");
   }
 }
-
+/*function to display roster to members*/
 showRoosters() async {
   try {
     print("___connection established___");
@@ -145,7 +144,8 @@ showRoosters() async {
   }
 }
 
-/* Generate output for available blood group */
+
+/*function for adding request by members to manager*/
 addRequest(
   String id,
   String category,
@@ -170,6 +170,7 @@ addRequest(
   }
 }
 
+/*function for showing request to manager by members to */
 showRequests() async {
   try {
     print("___connection established___");
