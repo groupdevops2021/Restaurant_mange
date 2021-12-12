@@ -16,4 +16,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 updates
+  This repository is for front end. After google signin,from the token tagged to the username in db, it will identify whether it is admin or worker login and according to that 
+manager page or worker page is displayed(file name)
 
