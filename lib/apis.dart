@@ -6,7 +6,7 @@ requestUser(String email) async {
   try {
     print("___connection established___");
     var response = await https.post(
-        Uri.parse("http://localhost:3000/api/v1/userDatas/log-emp"),
+        Uri.parse("https://hotel-api123.herokuapp.com/api/v1/userDatas/log-emp"),
         headers: {"Content-Type": "application/json"},
         body: json.encode({"email": email}));
     var _jsonString = response.body;
