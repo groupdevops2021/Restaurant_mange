@@ -18,6 +18,10 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ################
+
+
   This repository is for front end. After google signin,from the token tagged to the username in db, it will identify whether it is admin or worker login and according to that 
 manager page or worker page is displayed(file name)
+
+###steps for hosting front end
 
