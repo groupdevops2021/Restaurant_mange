@@ -27,7 +27,7 @@ adduser(
   try {
     print("___connection established___");
     var response =
-        await https.post(Uri.parse("http://localhost:3000/api/v1/userDatas"),
+        await https.post(Uri.parse("https://hotel-api123.herokuapp.com/api/v1/userDatas"),
             headers: {"Content-Type": "application/json"},
             body: json.encode({
               "email": _email,
@@ -48,7 +48,7 @@ viewUser() async {
   try {
     print("___connection established___12");
     var response = await https.get(
-      Uri.parse("http://localhost:3000/api/v1/userDatas"),
+      Uri.parse("https://hotel-api123.herokuapp.com/api/v1/userDatas"),
       headers: {"Content-Type": "application/json"},
     );
     var _jsonString = response.body;
@@ -64,7 +64,7 @@ addSalary(String name, String id, String salary, String month) async {
   try {
     print("___connection established___");
     var response =
-        await https.post(Uri.parse("http://localhost:3000/api/v1/new-salary"),
+        await https.post(Uri.parse("https://hotel-api123.herokuapp.com/api/v1/new-salary"),
             headers: {"Content-Type": "application/json"},
             body: json.encode({
               "name": name,
@@ -86,7 +86,7 @@ showSalary(String id) async {
   try {
     print("___connection established___");
     var response = await https.post(
-        Uri.parse("http://localhost:3000/api/v1/new-salary/search-emp"),
+        Uri.parse("https://hotel-api123.herokuapp.com/api/v1/new-salary/search-emp"),
         headers: {"Content-Type": "application/json"},
         body: json.encode({
           "emplid": id,
@@ -105,7 +105,7 @@ addrooster(List<String> addList) async {
   try {
     print("___connection established___");
     var response =
-        await https.post(Uri.parse("http://localhost:3000/api/v1/new-rooster"),
+        await https.post(Uri.parse("https://hotel-api123.herokuapp.com/api/v1/new-rooster"),
             headers: {"Content-Type": "application/json"},
             body: json.encode({
               "mm": addList[0],
@@ -132,7 +132,7 @@ showRoosters() async {
   try {
     print("___connection established___");
     var response = await https.get(
-      Uri.parse("http://localhost:3000/api/v1/new-rooster"),
+      Uri.parse("https://hotel-api123.herokuapp.com/api/v1/new-rooster"),
       headers: {"Content-Type": "application/json"},
     );
     var _jsonString = response.body;
@@ -154,7 +154,7 @@ addRequest(
   try {
     print("___connection established___");
     var response =
-        await https.post(Uri.parse("http://localhost:3000/api/v1/new-request"),
+        await https.post(Uri.parse("https://hotel-api123.herokuapp.com/api/v1/new-request"),
             headers: {"Content-Type": "application/json"},
             body: json.encode({
               "cat": category,
@@ -175,7 +175,7 @@ showRequests() async {
   try {
     print("___connection established___");
     var response = await https.get(
-      Uri.parse("http://localhost:3000/api/v1/new-request"),
+      Uri.parse("https://hotel-api123.herokuapp.com/api/v1/new-request"),
       headers: {"Content-Type": "application/json"},
     );
     var _jsonString = response.body;
